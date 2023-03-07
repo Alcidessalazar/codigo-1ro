@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        body {
+            color: #eee;
+            background-color: #222;
+            font-family: 'roboto' sans-serif;
+        }        
+
+        section {
+            font-size: 20px;
+        }
+
+        p {font-size: 36px;
+        border: 1px solid pink;}
+
+        /*esto se pone para vee q pasa no se pone como codigo */
+
+        .grande .rojo {
+            font-size: 50px;
+        }
+
+        ul>li {
+            border: 1px solid yellow;
+        }
+
+        ol li :nth-child(2) {
+            border: 1px solid green;
+        }
+        h1{
+            font-weight: 100;
+            text-align: center;
+        }
+        h2{
+            text-align: right;
+            border: 1px solid blue;
+        }
+        a{text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>estilos css</h1>
+    <section>
+        <p>texto del parrafo</p>
+        texto fuera del parrafo
+        <p class="grande">texto del <span class="rojo"> parrafo</span> grande</p>
+    </section>
+    <section>
+        <ul>
+            <li>java </li>
+        <ol>
+            <li>nodejs</li>
+            <li>browser</li>
+        </ol>
+        <li>phyton</li>
+        <li>typescript</li>
+        <li>
+            <a href="">ver mas</a>
+        </li>
+        </ul>
+    </section>
+    <section class="fuente-robot"></section>
+    <section>
+        <h2>
+            <p>parrafo peque'o</p>
+        </h2>
+    </section>
+
+</body>
+
+</html>

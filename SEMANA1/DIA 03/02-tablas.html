@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #444;
+            color: #eee;
+            font-family: sans-serif;
+        }
+
+        code {
+            font-family: consolas;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Filas y Columnas</h2>
+            <p>lAS TABLAS DE COLOCAN DENTRO DE UNA ETIQUETA <CODE>TABLE</CODE></p>
+            <p>Las tablas tienen 3 partes</p>
+            <ul>
+                <li><code>thead</code>: CABECERA</li>
+                <li><code>tbody</code>: CUERPO</li>
+                <li><code>tfood</code>: PIE DE TABLA</li>
+            </ul>
+        </section>
+        <hr />
+        <section>
+            <h2>Tabla simple</h2>
+            <table border="5">
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Descripcion</th>
+                        <th>Precio Unitario</th>
+                        <th>Precio total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">2</td>
+                        <td>Teclados mecanicos fanatic</td>
+                        <td>S/ 200.00</td>
+                        <td>S/ 400.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">1</td>
+                        <td>Monitor Samsung</td>
+                        <td>S/ 800.00</td>
+                        <td>S/ 800.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">1</td>
+                        <td>Mouse hyperx</td>
+                        <td>S/ 180.00</td>
+                        <td>S/ 180.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="center">TOTAL</td>
+                        <td>S/ 1380.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr />
+        <section>
+            <h2>Combinando Filas</h2>
+            <p>Para combinar filas se usa el atributo <code>rowspan</code></p>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Etiquetas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">izquierda</td>
+                        <td>derecha1</td>
+                    </tr>
+                    <tr>
+                        <td>derecha2</td>
+                    </tr>
+                    <tr>
+                        <td>derecha3</td>
+                    </tr>
+                    <tr>
+                        <td>derecha4</td>
+                    </tr>
+                    <tr>
+                        <td>derecha5</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">izquierda</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">izquierda</td>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                    <tr>
+                        <td>derecha</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr />
+        <section>
+            <h2>Ejercicio</h2>
+            <table border="3">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Supermercado "La vendedora"</td>
+                        <td></td>
+                        <td>25/04/2023</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">N fra:245600</td>
+                    </tr>
+                    <tr>
+                        <td align="center">CLIENTE</td>
+                        <td rowspan="3" align="center"> Juan Francisco <br/> 16516161651 <br/> Ambato, av ovallo</td>
+                    </tr>
+                    <td align="center">RUC</td>
+                    </tr>
+                    <tr>
+                        <td align="center">DIRECCION:</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
