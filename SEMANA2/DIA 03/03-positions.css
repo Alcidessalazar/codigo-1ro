@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    height: 2000px;
+}
+
+.caja-1,
+.caja-2 {
+    width: 100px;
+    height: 100px;
+}
+
+.action-button {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+.caja-1 {
+    border: 1px solid red;
+    left: calc(50% - 50px);
+   /* transform: translate( -50px, 0);*/
+    position: relative;
+    top: 15px;
+}
+
+.caja-2 {
+    border: 1px solid purple;
+    position: relative;
+}
+
+/* existen 4 formas de posicionamiento - 
+1ra static = posicionamiento por defecto y el elemento no puede ser modificado
+2do relative = puede ser movido respecto de top y left cuando sus elementos son movidos 
+sus hermanos tambien son desplazados
+truco: si un elemento tiene hijos con posici absoluto este elemt debe tener posic relat
+para que sus hijos no salgan de los margenes del padre
+3ro absolute= puede ser movido respecto del primer ancestro que tenga posic relativo
+si ningun ancestro tiene posic establecido el element se mueve con respecto del viewport
+el elemento puede ser movido con respecto de left, right, bottom y top
+cuando un element absolut es movido sus hermanos toman su posicion y no toman en cuenta
+la ubicacion del element absolut
+4to = puede ser movido con respecto de top, left, right, y bottom
+el element siempre toma como referencia el viewport (el area visible del browser)*/
+.circulo-2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+}
